@@ -1,0 +1,28 @@
+meta {
+  name: ingest event
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/events
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "event_id": "123",
+    "tenant_id": "tenant-A",
+    "event_name": "login",
+    "timestamp": "2023-10-27T10:00:00Z",
+    "payload": {
+      "user_id": 50
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
