@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "distributex-bruno",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
