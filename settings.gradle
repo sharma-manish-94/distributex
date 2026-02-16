@@ -1,0 +1,2 @@
+rootProject.name = "distributeX"
+include 'common', 'api-gateway', 'ingestion-service'
